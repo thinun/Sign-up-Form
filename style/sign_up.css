@@ -7,8 +7,10 @@
 .container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
+
 }
 
 .left-side-container {
@@ -59,12 +61,13 @@
 }
 
 .login-main-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 100px;
+    padding-left: 50px;
     font-size: 25px;
-    position: absolute;
-    top: 50px;
-    width: 750px;
-    right: 47px;
-    font-family: "Bahnschrift";
+    font-family: "Bahnschrift", serif;
     line-height: 33px;
     margin-top: 20px;
 
@@ -75,29 +78,24 @@
 }
 
 .login-container {
-    margin-top: 300px;
     display: flex;
-    right: 55px;
+    flex-direction: row;
+    align-items: start;
     height: 250px;
+    margin-top: 50px;
+    padding-left: 50px;
+
     border-color: lightgreen;
     border-style: solid;
     border-top: hidden;
     border-left: hidden;
     border-right: hidden;
     border-width: 5px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
-}
-
-.left-login-container {
-    position: relative;
-    right: -55px;
-
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 .right-login-container {
-    position: relative;
-    right: -155px;
-
+    padding-left: 50px;
 }
 
 .login-form-text {
@@ -145,14 +143,17 @@
     border-width: 0;
     border-radius: 5px;
 }
-.creat-account-button:hover{
+
+.creat-account-button:hover {
     cursor: pointer;
 }
+
 .bottom-text {
     margin-top: 20px;
     margin-left: 55px;
 }
-.bottom-text:hover{
+
+.bottom-text:hover {
     cursor: default;
 }
 
@@ -167,10 +168,25 @@
 
 }
 
-input[type="password"]:invalid {
-    border-color: red;
-}
 
 input:invalid:not(:focus) + button:active {
     border-color: red;
+}
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 400px) {
+    .container {
+        justify-content: space-between;
+    }
+
+    .left-side-container {
+
+        width: 100%;
+    }
+
+    .right-side-container {
+        width: 100%;
+    }
+
+    /* Additional styles for small screens... */
 }
