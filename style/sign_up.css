@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+.left-side-container {
+    width: 525px;
+    height: 800px;
+
+}
+
+.right-side-container {
+    background-color: white;
+    flex: 1;
+}
+
+.login-main-pic {
+    width: 525px;
+}
+
+.logo-container {
+    z-index: 2;
+    position: absolute;
+    background-color: black;
+    width: 525px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 180px;
+}
+
+.logo {
+    z-index: 4;
+    position: relative;
+    left: 150px;
+    width: 100px;
+    height: 125px;
+    top: 10px;
+}
+
+.logo-text {
+    position: relative;
+    color: white;
+    bottom: 85px;
+    left: 270px;
+    font-family: "Norse";
+    font-size: 50px;
+}
+
+.logo-text:hover {
+    cursor: default;
+}
+
+.login-main-text-container {
+    font-size: 25px;
+    position: absolute;
+    top: 50px;
+    width: 750px;
+    right: 47px;
+    font-family: "Bahnschrift";
+    line-height: 33px;
+    margin-top: 20px;
+
+}
+
+.login-main-text-container:hover {
+    cursor: default;
+}
+
+.login-container {
+    margin-top: 300px;
+    display: flex;
+    right: 55px;
+    height: 250px;
+    border-color: lightgreen;
+    border-style: solid;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    border-width: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+.left-login-container {
+    position: relative;
+    right: -55px;
+
+}
+
+.right-login-container {
+    position: relative;
+    right: -155px;
+
+}
+
+.login-form-text {
+    height: 30px;
+    font-family: "Ink Free";
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.02);
+
+}
+
+.login-form-text:hover {
+    cursor: default;
+}
+
+.form-input {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+    width: 200px;
+    height: 25px;
+    font-family: "Roboto Light";
+    padding: 3px 3px 3px 10px;
+    border-radius: 3px;
+    border: 1px solid blue;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    border-bottom: hidden;
+    border-right: hidden;
+    border-left: hidden;
+}
+
+.button {
+    margin-left: 55px;
+    margin-top: 20px;
+
+}
+
+.creat-account-button {
+    height: 35px;
+    width: 130px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+    background-color: lightgreen;
+    border-width: 0;
+    border-radius: 5px;
+}
+.creat-account-button:hover{
+    cursor: pointer;
+}
+.bottom-text {
+    margin-top: 20px;
+    margin-left: 55px;
+}
+.bottom-text:hover{
+    cursor: default;
+}
+
+.input-group {
+    height: 50px;
+
+}
+
+.login-link {
+    color: lightgreen;
+    font-weight: bold;
+
+}
+
+input[type="password"]:invalid {
+    border-color: red;
+}
+
+input:invalid:not(:focus) + button:active {
+    border-color: red;
+}
